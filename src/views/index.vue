@@ -1,6 +1,7 @@
 <template>
-  <div>
+  <div class="main">
     <h1>{{ users }}</h1>
+    <span class="icon-activity"></span>
   </div>
 </template>
 
@@ -14,3 +15,13 @@ export default {
   },
 };
 </script>
+
+<style lang="scss">
+.main {
+  @include container;
+  margin: 0 auto;
+}
+.icon-activity {
+  color: #2196f3;
+}
+</style>
